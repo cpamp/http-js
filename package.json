@@ -24,6 +24,6 @@
     "@types/node": "^7.0.18"
   },
   "dependencies": {
-    "es6-promise": "^4.1.0"
+    "light-promise-js": "^1.0.0"
   }
 }

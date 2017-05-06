@@ -1,4 +1,4 @@
-import { Promise } from "es6-promise";
+import { $Promise } from "light-promise-js";
 
 export interface IHttpRequestOptions {
     method: string,
@@ -10,7 +10,7 @@ export interface IHttpRequestOptions {
 }
 
 export function $http(options: IHttpRequestOptions): Promise<any> {
-    return new Promise<any>((resolve, reject) => {
+    return new $Promise((resolve, reject) => {
         var request = new XMLHttpRequest();
         request.open(options.method, options.url, true, options.username, options.password);
         for (var key in options.headers) {
