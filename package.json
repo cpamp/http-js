@@ -2,7 +2,7 @@
   "name": "http-js",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bin/$http.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && npm run bundle && npm run bundle-min ",
